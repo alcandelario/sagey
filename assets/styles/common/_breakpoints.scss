@@ -1,0 +1,41 @@
+/*
+ * Matches Bootstrap 3
+ * @see http://getbootstrap.com/css/#responsive-utilities
+ */
+$bp-xs    : max-width 767px;    // Mobile
+$bp-sm    : 768px 991px;        // Tablet - Portrait
+$bp-md    : 992px 1199px;       // Tablet - Landscape
+$bp-lg    : min-width 1200px;   // Desktop
+
+/*
+ * By Device Name/BS3
+ */
+$bp-mobile: max-width 767px;
+
+$bp-not-mobile: min-width 767px;
+
+$bp-xs-sm: max-width 991px;
+
+$bp-mobile-tablet: max-width 991px;
+
+$bp-tablet: 768px 991px;
+
+$bp-sm-md: 768px 1199px;
+
+$bp-tablet-desktop: min-width 768px;
+
+$bp-desktop: min-width 992px;
+
+.bootstrap-view-xs,
+.bootstrap-view-sm,
+.bootstrap-view-md,
+.bootstrap-view-lg {
+  display: none
+}
+
+/*
+ * Samples
+ */
+/* @include breakpoint($bp-mobile){ ... } */
+/* @include breakpoint($bp-xs-sm){ ... } */
+/* @include breakpoint($bp-desktop){ ... } */

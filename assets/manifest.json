@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+        "scripts/util.js"
+      ], 
+      "vendor":[
+
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "vendor": [
+        
+      ],
+      "main": true
+    }
+  },
+  "config": {
+    "devUrl"            : "http://example.dev",
+    "nameSpaceCurrent"  : "Fyda",
+    "nameSpaceNew"      : "Fyda"
+  },
+  "paths": {
+    "source"  : "assets/",
+    "dist"    : "dist/"
+  }
+}

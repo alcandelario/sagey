@@ -1,0 +1,186 @@
+$cap-bg: rgba(178,178,178,1);
+$active-bg: #0073aa;
+$active-txt: #fff;
+
+#wpwrap {
+  background: #fff;
+}
+
+.sagey-cap {
+
+  hr {
+    margin: 10px 0;
+  }
+
+  .wrap > h2 {
+    margin-bottom: 30px;
+  }
+
+  .form-table {
+    margin: 0;
+
+    td {
+      padding: 0;
+    }
+  }
+
+  ul,
+  li,
+  form,
+  #config-tabs 
+  {
+    border-radius: 0;
+  }
+
+  .wrap,
+  form {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+
+  #config-tabs { 
+    position: relative;
+  
+    > ul {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      background: none;
+      padding: 0;
+      border-top: none;
+      border-left: none;
+      border-bottom: none; 
+
+      > li {
+        float: none; 
+        border-bottom: 2px solid darken( $cap-bg, 50% );
+        margin: 0;
+        border: 0;
+
+        &.ui-state-default {
+          background: transparent;
+        }
+
+        > a {
+          display: block;
+          width: 100%;
+          padding: 15px 30px;
+          float: none;
+        }
+
+        &.ui-tabs-active {
+          background: $active-bg;
+          position: relative;
+
+          a {
+            color: $active-txt;
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-right: 14px solid $active-txt;
+            border-bottom: 7px solid transparent;
+            position: absolute;
+            right: -7px;
+            top: 35%;
+          }
+        }
+      }
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    max-width: 300px;
+  }
+
+  /** Added by jquery-ui */
+  .ui-tabs-panel {
+    padding: 0 0 0 20% !important;
+  }
+
+  /** MediaItem */
+  .media-label {
+    img {
+      display: block;
+      max-width: 300px !important;
+    }
+
+    input[type='button'] {
+      margin: 15px 0;
+    }
+  }
+
+  .delete-btn {
+    position: absolute;
+    top: 64px;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    background: rgba(178,178,178,0.9);
+    color: #fff;
+    text-align: center;
+    padding-top: 3px;
+    left: 265px;
+    line-height: 1.4em;
+  }
+
+  /* Form buttons */
+
+  p.submit {
+    margin: 0 !important;
+  }
+  
+  input[value='Reset'],
+  input[value='Export'], 
+  input[value='Import']
+  {
+    margin: 0 15px 0 0; 
+  }
+
+  input[type='button'],
+  input[type='submit'],
+  input[type='file'] 
+  {
+    background: #fff;
+    color: $active-bg;
+    border: 1px solid $active-bg;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Helvetica";
+    letter-spacing: 0.1em;
+    padding: 7px 15px;
+
+    &:hover {
+      background: $active-bg;
+      color: #fff;
+    }
+  }
+
+  input[value='Import'],
+  input[type='file'] 
+  {
+    float: left;
+  }  
+
+  input[type='file'] {
+    border: 0;
+  }
+
+}
