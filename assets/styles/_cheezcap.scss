@@ -61,6 +61,7 @@ $active-txt: #fff;
       border-top: none;
       border-left: none;
       border-bottom: none; 
+      max-width: 160px;
 
       > li {
         float: none; 
@@ -75,7 +76,7 @@ $active-txt: #fff;
         > a {
           display: block;
           width: 100%;
-          padding: 15px 30px;
+          padding: 7px 20px;
           float: none;
         }
 
@@ -107,12 +108,12 @@ $active-txt: #fff;
   input,
   select,
   textarea {
-    max-width: 300px;
+    width: 300px;
   }
 
   /** Added by jquery-ui */
   .ui-tabs-panel {
-    padding: 0 0 0 20% !important;
+    padding: 0 0 0 175px !important;
   }
 
   /** MediaItem */
@@ -166,6 +167,7 @@ $active-txt: #fff;
     font-family: "Helvetica";
     letter-spacing: 0.1em;
     padding: 7px 15px;
+    width: initial;
 
     &:hover {
       background: $active-bg;
